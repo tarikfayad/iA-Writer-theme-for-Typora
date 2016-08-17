@@ -50,6 +50,41 @@ font-weight: normal;
 
 }
 
+@font-face {
+
+font-family: 'Cousine';
+font-style: normal;
+font-weight: normal;
+src:  url(./iawriter/ttf/Cousine-Regular.ttf);
+
+}
+@font-face {
+
+font-family: 'Cousine';
+font-style: italic;
+font-weight: normal;
+   src:  url(./iawriter/ttf/Cousine-Italic.ttf);
+
+}
+
+@font-face {
+
+font-family: 'Cousine';
+font-style: normal;
+font-weight: bold;
+  src:  url(./iawriter/ttf/Cousine-Bold.ttf);
+
+}
+
+@font-face {
+
+font-family: 'Cousine';
+font-style: italic;
+font-weight: bold;
+src:  url(./iawriter/ttf/Cousine-BoldItalic.ttf);
+
+}
+
 
 
 html {
@@ -61,7 +96,7 @@ font-size: 12pt;
 html, body {
 
 background-color: #f9f9f9;
-font-family: "Courier Prime Sans", 'Times New Roman', Times;
+font-family: "Cousine", "Courier Prime Sans", 'Times New Roman', Times;
 color: #1a1a1a;
 font-weight: 100;
 line-height: 1.5em;
