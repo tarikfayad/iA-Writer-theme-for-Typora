@@ -91,9 +91,9 @@ html {
 }
 
 html, body {
-background-color: #141411;
+background-color: #1A1A1A;
 font-family: "Cousine", "Courier Prime Sans", 'Times New Roman', Times;
-color: #f9f9f9;
+color: #CCCCCC;
 font-weight: 100;
 line-height: 1.5em;
 }
@@ -124,7 +124,10 @@ input,
 select,
 textarea,
 div.code-tooltip-content {
-    color: #b8bfc6;
+	/** Setting the cursor color to be blue. **/
+    color: #09C8FD;
+	text-shadow: 0px 0px 0px #CCCCCC;
+	-webkit-text-fill-color: transparent;
 }
 
 div.code-tooltip,
@@ -883,4 +886,10 @@ footer {
 #toggle-sourceview-btn:hover {
     color: #eee;
     background: #333333;
+}
+
+/**Focus mode fix to keep only the primary line dark. **/
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * {
+	text-shadow: 0px 0px 0px #707070;
+	-webkit-text-fill-color: transparent;
 }

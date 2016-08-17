@@ -125,6 +125,19 @@ pre, code{
     margin-top: 30px;
 }
 
+html,
+body,
+button,
+input,
+select,
+textarea,
+div.code-tooltip-content {
+	/** Setting the cursor color to be blue. **/
+    color: #09C8FD;
+	text-shadow: 0px 0px 0px #1a1a1a;
+	-webkit-text-fill-color: transparent;
+}
+
 body > *:first-child {
     margin-top: 0 !important;
 }
@@ -460,4 +473,10 @@ pre.md-fences,
     border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
     border-style: solid;
     border-width: 1px;
+}
+
+/**Focus mode fix to keep only the primary line dark. **/
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * {
+	text-shadow: 0px 0px 0px #DADADA;
+	-webkit-text-fill-color: transparent;
 }
