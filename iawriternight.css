@@ -1,87 +1,35 @@
 @font-face {
 
-font-family: 'Courier Prime Sans';
+font-family: 'NittiPX';
 font-style: normal;
 font-weight: normal;
-src:  url(./iawriter/ttf/Courier_Prime_Sans.ttf);
+src:  url(./iawriter/ttf/NittiPX-Light.ttf);
 
 }
 @font-face {
 
-font-family: 'Courier Prime Sans';
+font-family: 'NittiPX';
 font-style: italic;
 font-weight: normal;
-   src:  url(./iawriter/ttf/Courier_Prime_Sans_Italic.ttf);
+   src:  url(./iawriter/ttf/NittiPX-LightItalic.ttf);
 
 }
 
 @font-face {
 
-font-family: 'Courier Prime Sans';
-font-style: normal;
-font-weight: bold;
-  src:  url(./iawriter/ttf/Courier_Prime_Sans_Bold.ttf);
-
-}
-
-@font-face {
-
-font-family: 'Courier Prime Sans';
-font-style: italic;
-font-weight: bold;
-src:  url(./iawriter/ttf/Courier_Prime_Sans_Bold_Italic.ttf);
-
-}
-
-@font-face {
-
-font-family: 'Courier Prime Sans Code';
-font-style: normal;
-font-weight: normal;
-src:  url(./iawriter/ttf/Courier_Prime_Sans_Code.ttf);
-
-}
-@font-face {
-
-font-family: 'Courier Prime Sans Code';
-font-style: italic;
-font-weight: normal;
-   src:  url(./iawriter/ttf/Courier_Prime_Sans_Italic_Code.ttf);
-
-}
-
-@font-face {
-
-font-family: 'Cousine';
-font-style: normal;
-font-weight: normal;
-src:  url(./iawriter/ttf/Cousine-Regular.ttf);
-
-}
-@font-face {
-
-font-family: 'Cousine';
-font-style: italic;
-font-weight: normal;
-   src:  url(./iawriter/ttf/Cousine-Italic.ttf);
-
-}
-
-@font-face {
-
-font-family: 'Cousine';
+font-family: 'NittiPX';
 font-style: normal;
 font-weight: bold;
-  src:  url(./iawriter/ttf/Cousine-Bold.ttf);
+  src:  url(./iawriter/ttf/NittiPX-Bold.ttf);
 
 }
 
 @font-face {
 
-font-family: 'Cousine';
+font-family: 'NittiPX';
 font-style: italic;
 font-weight: bold;
-src:  url(./iawriter/ttf/Cousine-BoldItalic.ttf);
+src:  url(./iawriter/ttf/NittiPX-BoldItalic.ttf);
 
 }
 
@@ -92,7 +40,7 @@ html {
 
 html, body {
 background-color: #1A1A1A;
-font-family: "Cousine", "Courier Prime Sans", 'Times New Roman', Times;
+font-family: 'NittiPX' 'Times New Roman', Times;
 color: #CCCCCC;
 font-weight: 100;
 line-height: 1.5em;
