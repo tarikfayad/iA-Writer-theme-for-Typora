@@ -3,7 +3,7 @@
 font-family: 'NittiPX';
 font-style: normal;
 font-weight: normal;
-src:  url(./iawriter/ttf/NittiPX-Light.ttf);
+src:  url(./iawriter/ttf/NittiPX-Normal.ttf);
 
 }
 @font-face {
@@ -11,7 +11,7 @@ src:  url(./iawriter/ttf/NittiPX-Light.ttf);
 font-family: 'NittiPX';
 font-style: italic;
 font-weight: normal;
-   src:  url(./iawriter/ttf/NittiPX-LightItalic.ttf);
+   src:  url(./iawriter/ttf/NittiPX-NormalItalic.ttf);
 
 }
 
@@ -34,8 +34,77 @@ src:  url(./iawriter/ttf/NittiPX-BoldItalic.ttf);
 }
 
 
-html {
-    font-size: 12pt;
+/* Responsive adjustments for font size*/
+@media screen and (min-width: 200px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 220px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 260px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 280px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 21px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  html {
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  html {
+    font-size: 24px;
+  }
 }
 
 html, body {
@@ -44,13 +113,15 @@ font-family: 'NittiPX' 'Times New Roman', Times;
 color: #CCCCCC;
 font-weight: 100;
 line-height: 1.5em;
+font-kerning: normal;
+letter-spacing: -2px;
 }
 
 
 #write{
-    max-width: 600px;
+    max-width: 33em;
   	margin: 0 auto;
-  	padding: 20px 30px 40px 30px;
+  	padding: 20px 0px 40px 0px;
 	padding-top: 20px;
 }
 
@@ -63,7 +134,13 @@ line-height: 1.5em;
     margin-top: 30px;
 }
 
+::selection {
+    -webkit-text-fill-color: #CCCCCC !important;
+}
 
+::-moz-selection {
+    -webkit-text-fill-color: #CCCCCC !important;
+}
 
 html,
 body,
@@ -152,19 +229,6 @@ audio:not([controls]) {
 
 [hidden] {
     display: none;
-}
-
-::-moz-selection {
-    background: #4a89dc;
-    color: #fff;
-    text-shadow: none;
-}
-
-*.in-text-selection,
-::selection {
-    background: #4a89dc;
-    color: #fff;
-    text-shadow: none;
 }
 
 ul,
