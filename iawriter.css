@@ -239,14 +239,13 @@ li>ul {
     margin: 0 0;
 }
 hr {
-    height: 4px;
+    height: 2px;
     padding: 0;
     margin: 16px 0;
     background-color: #e7e7e7;
     border: 0 none;
     overflow: hidden;
     box-sizing: content-box;
-    border-bottom: 1px solid #ddd;
 }
 
 body > h2:first-child {
@@ -288,21 +287,62 @@ h6 p {
 li p.first {
     display: inline-block;
 }
+
 ul,
 ol {
     padding-left: 30px;
 }
+
+ol li {
+    list-style-type: none;
+    counter-increment: list;
+    position: relative;
+}
+
+ol li:before {
+    content: counter(list) ".";
+    position: absolute;
+    left: -2.5em;
+    width: 2em;
+    text-align: right;
+}
+
+ul li {
+    list-style-type: none;
+    position: relative;
+}
+
+ul li:before {
+    content: '- ';
+    position: absolute;
+    left: -2.5em;
+    width: 2em;
+    text-align: right;
+}
+
 ul:first-child,
 ol:first-child {
     margin-top: 0;
 }
+
 ul:last-child,
 ol:last-child {
     margin-bottom: 0;
 }
-blockquote {
-    margin-left: 3em;
+
+blockquote ol,
+blockquote ul {
+  margin-left: calc((31 / 19) * 1rem);
 }
+
+blockquote {
+    margin-left: calc((16 / 19) * -1rem); /* 16px at width: 1080px */
+    margin-right: calc((16 / 19) * -1rem); /* 16px at width: 1080px */
+    padding-left: calc((40 / 19) * 1rem); /* 40px at width: 1080px */
+    padding-right: calc((40 / 19) * 1rem); /* 40px at width: 1080px */
+    background-color: #F0F0F0;
+}
+
 blockquote blockquote {
     padding-right: 0;
 }
@@ -370,13 +410,35 @@ pre.md-fences,
 }
 
 .task-list-item {
-	padding-left:32px;
+	padding-left:1.25rem;
+}
+
+.task-list-item p {
+    margin: 0.5rem 1rem;
 }
 
 .task-list-item input {
-  top: 3px;
-  left: 8px;
+    top: 0.1875rem;
 }
+
+.task-list-item input:before {
+    content: "[ ]";
+    display: inline-block;
+    width: 1.9rem;
+    height: 1.5rem;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #fcfcfc;
+    margin-top: -0.4375rem;
+}
+
+.task-list-item input:checked:before,
+.task-list-item input[checked]:before {
+    content: '[x]';
+    color: #1a1a1a;
+}
+
+
 
 @media screen and (min-width: 914px) {
     /*body {

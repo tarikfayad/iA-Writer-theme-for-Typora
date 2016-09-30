@@ -166,8 +166,12 @@ div.code-tooltip,
 
 hr {
     height: 2px;
-    border: 0;
-    margin: 50px 0 !important;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #474d54;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
 }
 
 h1,
@@ -237,6 +241,33 @@ ol {
     /* 30px */
 }
 
+ol li {
+    list-style-type: none;
+    counter-increment: list;
+    position: relative;
+}
+
+ol li:before {
+    content: counter(list) ".";
+    position: absolute;
+    left: -2.5em;
+    width: 2em;
+    text-align: right;
+}
+
+ul li {
+    list-style-type: none;
+    position: relative;
+}
+
+ul li:before {
+    content: '- ';
+    position: absolute;
+    left: -2.5em;
+    width: 2em;
+    text-align: right;
+}
+
 ul {
     list-style: square;
 }
@@ -266,8 +297,17 @@ cite {
     font-style: italic;
 }
 
+blockquote ol,
+blockquote ul {
+  margin-left: calc((31 / 19) * 1rem);
+}
+
 blockquote {
-    margin-left: 3em;
+    margin-left: calc((16 / 19) * -1rem); /* 16px at width: 1080px */
+    margin-right: calc((16 / 19) * -1rem); /* 16px at width: 1080px */
+    padding-left: calc((40 / 19) * 1rem); /* 40px at width: 1080px */
+    padding-right: calc((40 / 19) * 1rem); /* 40px at width: 1080px */
+    background-color: #242424;
 }
 
 pre,
@@ -315,11 +355,6 @@ a {
     transition: all .2s ease-in-out;
 }
 
-hr {
-    background: #474d54;
-    /* variable */
-}
-
 #write>*:first-child {
     margin-top: 40px;
 }
@@ -362,10 +397,6 @@ mark {
     background: #D3D40E;
 }
 
-blockquote {
-    color: #9DA2A6;
-}
-
 table a {
     color: #DEDEDE;
     /* variable */
@@ -385,28 +416,28 @@ td {
     padding-left: 1.25rem;
 }
 
+.task-list-item p {
+    margin: 0.5rem 1rem;
+}
+
 .task-list-item input {
     top: 0.1875rem;
 }
 
 .task-list-item input:before {
-    content: "";
+    content: "[ ]";
     display: inline-block;
-    width: 0.875rem;
-    height: 0.875rem;
+    width: 1.9rem;
+    height: 1.5rem;
     vertical-align: middle;
     text-align: center;
-    border: 1px solid #b8bfc6;
-    background-color: #363B40;
+    background-color: #1A1A1A;
     margin-top: -0.4375rem;
 }
 
 .task-list-item input:checked:before,
 .task-list-item input[checked]:before {
-    content: '\221A';
-    /*◘*/
-    font-size: 0.625rem;
-    line-height: 0.625rem;
+    content: '[x]';
     color: #DEDEDE;
 }
 
@@ -612,6 +643,14 @@ td {
 .md-expand.md-image>.md-meta {
     background: transparent;
     color: #DDD;
+}
+
+.mathjax-block {
+    color: #CCCCCC;
+}
+
+.md-mathjax-preview {
+    color: #CCCCCC;
 }
 
 #write>h3:before,
