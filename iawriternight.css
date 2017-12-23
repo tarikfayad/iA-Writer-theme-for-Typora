@@ -109,7 +109,7 @@ src:  url(./iawriter/ttf/NittiPX-BoldItalic.ttf);
 
 html, body {
 background-color: #1A1A1A;
-font-family: 'NittiPX' 'Times New Roman', Times;
+font-family: 'NittiPX', 'Times New Roman', Times;
 color: #CCCCCC;
 font-weight: 100;
 line-height: 1.5em;
