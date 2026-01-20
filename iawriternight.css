@@ -1,38 +1,37 @@
 @font-face {
 
-font-family: 'NittiPX';
+font-family: 'iAWriterDuo';
 font-style: normal;
 font-weight: normal;
-src:  url(./iawriter/ttf/NittiPX-Normal.ttf);
+src:  url(./iawriter/ttf/iAWriterDuoS-Regular.ttf);
 
 }
 @font-face {
 
-font-family: 'NittiPX';
+font-family: 'iAWriterDuo';
 font-style: italic;
 font-weight: normal;
-   src:  url(./iawriter/ttf/NittiPX-NormalItalic.ttf);
+   src:  url(./iawriter/ttf/iAWriterDuoS-Italic.ttf);
 
 }
 
 @font-face {
 
-font-family: 'NittiPX';
+font-family: 'iAWriterDuo';
 font-style: normal;
 font-weight: bold;
-  src:  url(./iawriter/ttf/NittiPX-Bold.ttf);
+  src:  url(./iawriter/ttf/iAWriterDuoS-Bold.tff);
 
 }
 
 @font-face {
 
-font-family: 'NittiPX';
+font-family: 'iAWriterDuo';
 font-style: italic;
 font-weight: bold;
-src:  url(./iawriter/ttf/NittiPX-BoldItalic.ttf);
+src:  url(./iawriter/ttf/iAWriterDuoS-BoldItalic.ttf);
 
 }
-
 
 /* Responsive adjustments for font size*/
 @media screen and (min-width: 200px) {
