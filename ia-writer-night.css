@@ -943,3 +943,28 @@ footer {
 	text-shadow: 0px 0px 0px #707070;
 	-webkit-text-fill-color: transparent;
 }
+
+/* Style the preferences dialog */
+.megamenu-content,
+.megamenu-menu-panel,
+#megamenu-content,
+.preference-panel,
+.ty-preferences {
+    background-color: #1a1a1a !important;  /* or whatever your dark background color is */
+    color: #fcfcfc !important;
+}
+
+/* Style input fields in preferences */
+.preference-panel input,
+.preference-panel select,
+.preference-panel textarea {
+    background-color: #2a2a2a !important;
+    color: #fcfcfc !important;
+    border-color: #3a3a3a !important;
+}
+
+/* Style buttons */
+.preference-panel button {
+    background-color: #2a2a2a !important;
+    color: #fcfcfc !important;
+}
