@@ -20,7 +20,7 @@ font-weight: normal;
 font-family: 'iAWriterDuo';
 font-style: normal;
 font-weight: bold;
-  src:  url(./iawriter/ttf/iAWriterDuoS-Bold.tff);
+  src:  url(./iawriter/ttf/iAWriterDuoS-Bold.ttf);
 
 }
 
@@ -113,7 +113,7 @@ color: #CCCCCC;
 font-weight: 100;
 line-height: 1.5em;
 font-kerning: normal;
-letter-spacing: -2px;
+letter-spacing: 0.02em;
 }
 
 
