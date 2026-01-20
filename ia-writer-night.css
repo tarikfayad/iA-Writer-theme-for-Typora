@@ -944,27 +944,104 @@ footer {
 	-webkit-text-fill-color: transparent;
 }
 
-/* Style the preferences dialog */
-.megamenu-content,
-.megamenu-menu-panel,
-#megamenu-content,
-.preference-panel,
-.ty-preferences {
-    background-color: #1a1a1a !important;  /* or whatever your dark background color is */
-    color: #fcfcfc !important;
+/** UI for electron - Dark Theme **/
+
+/* Main menu and titlebar */
+.megamenu-menu,
+#top-titlebar, 
+#top-titlebar *,
+.megamenu-content {
+	background: #1a1a1a;
+	color: #fcfcfc;
 }
 
-/* Style input fields in preferences */
-.preference-panel input,
-.preference-panel select,
-.preference-panel textarea {
-    background-color: #2a2a2a !important;
-    color: #fcfcfc !important;
-    border-color: #3a3a3a !important;
+.megamenu-menu-header {
+	border-bottom: 1px dashed #3a3a3a;
 }
 
-/* Style buttons */
-.preference-panel button {
-    background-color: #2a2a2a !important;
-    color: #fcfcfc !important;
+.megamenu-menu {
+	box-shadow: none;
+	border-right: 1px dashed #3a3a3a;
+}
+
+.megamenu-menu-header #megamenu-menu-header-title,
+.megamenu-menu-header:hover, 
+.megamenu-menu-header:focus,
+.megamenu-menu-header #megamenu-menu-header-title:before {
+	color: #fcfcfc;
+}
+
+/* Headers and footers */
+header, 
+.context-menu, 
+.megamenu-content, 
+footer {
+	font-family: 'iAWriterDuo', 'Times New Roman', Times, serif;
+	color: #fcfcfc;
+}
+
+/* Menu items */
+.megamenu-menu-list li a:hover, 
+.megamenu-menu-list li a.active,
+.long-btn:hover {
+	color: inherit;
+	background-color: #2a2a2a;
+}
+
+/* Buttons */
+#megamenu-back-btn {
+	color: #fcfcfc;
+	border-color: #fcfcfc;
+}
+
+.megamenu-menu-panel .btn,
+.btn-default {
+	background-color: #2a2a2a;
+	color: #fcfcfc;
+}
+
+/* Modal and preferences window */
+.modal-content {
+	background-color: #1a1a1a;
+	color: #fcfcfc;
+}
+
+.ty-preferences .window-header {
+	border-bottom: 1px dashed #3a3a3a;
+	box-shadow: none;
+	background: #1a1a1a;
+}
+
+.ty-preferences .window-content {
+	background-color: #1a1a1a;
+}
+
+.ty-preferences .nav-group-item.active {
+	color: white;
+	background: #2a2a2a;
+}
+
+/* Form inputs */
+input, 
+select, 
+textarea {
+	border: 1px solid #3a3a3a;
+	background: #2a2a2a !important;
+	color: #d0d0d0;
+}
+
+/* Dropdown options */
+option {
+	color: #d0d0d0;
+	background: #2a2a2a;
+}
+
+/* Dividers */
+.dropdown-menu .divider {
+	border-color: #3a3a3a;
+}
+
+/* Links */
+a {
+	color: #09C8FD;
 }
